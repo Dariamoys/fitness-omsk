@@ -8,25 +8,23 @@
   <meta name="description"
     content="Supergym – самый большой фитнес центр за Уралом. Тренажерный зал оснащен всем необходимым современным оборудованием.">
   <title>Supergym</title>
-  <link rel="preload" href="fonts/alumni-sans-extrabold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/alumni-sans-semibold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/roboto-condensed-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed-regular.woff" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto-condensed-light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/roboto-condensed-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/roboto-condensed-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts//alumni-sans-semi-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/alumni-sans-extra-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/logo.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-
 <body>
   <div class="wrapper">
     <header class="page-header">
       <div class="container">
         <nav class="page-header__nav main-nav">
-          <a class="main-nav__logo-link" href="index.html" aria-label="Главная страница">
-            <svg class="main-nav__logo" class="main-navigation__logo logo" viewBox="0 0 122 22" aria-hidden="true"
+          <a class="main-nav__logo-link logo" href="index.html" aria-label="Главная страница">
+            <svg class="main-nav__logo logo__img" viewBox="0 0 122 22" aria-hidden="true"
               width="122" height="22">
               <use xlink:href="img/sprite.svg#logo"></use>
             </svg>
@@ -34,40 +32,736 @@
           <a class="main-nav__link" href="tel:+78005555555"
             aria-label="Позвонить в фитнес-центр Supergym">8-800-555-55-55</a>
         </nav>
-      </div>
-    </header>
-    <main>
-      <section class="hero">
-        <div class="container">
-          <div class="hero-wrapper">
-            <div class="hero__text-wrapper">
-              <div class="hero__content-wrapper">
-                <p>Омск</p>
-                <h1>Фитнес центр</h1>
-                <ul class="hero__list">
-                  <li class="hero__item">Тренажёрный зал</li>
-                  <li class="hero__item">Групповые занятия</li>
-                  <li class="hero__item">Кардио-зона</li>
-                </ul>
-              </div>
-              <a class="hero__link btn" href="#">Купить абонемент</a>
-            </div>
-            <div class="hero__image-wrapper">
-              <picture>
-                <source type="image/webp" media="(max-width: 1199px)"
+        <div class="page-header__wrapper">
+          <div class="page-header__content">
+            <ul class="page-header__content-list list">
+              <li class="page-header__content-item">Тренажёрный зал</li>
+              <li class="page-header__content-item">Групповые занятия</li>
+              <li class="page-header__content-item">Кардио-зона</li>
+            </ul>
+            <p>омск</p>
+            <h1>Фитнес центр</h1>
+            <a class="page-header__content-button btn" href="#">Купить абонемент</a>
+          </div>
+          <div class="page-header__image-wrapper">
+            <picture>
+              <source type="image/webp" media="(max-width: 1199px)"
                   srcset="img/images/tablet/hero-tablet.webp 1x, img/images/retina/hero-tablet@2x.webp 2x">
                 <source type="image/webp"
                   srcset="img/images/desktop/hero-desktop.webp 1x, img/images/retina/hero-desktop@2x.webp 2x">
                 <img src="img/images/desktop/hero-desktop.jpg" srcset="img/images/retina/hero-desktop@2x.jpg"
                   alt="Спортивный мужчина в костюме супермена" width="500" height="556">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+    <section class="gym">
+      <div class="container gym__container">
+        <div class="gym__wrapper">
+          <div class="gym__content-wrapper">
+            <h2>Тренажерный зал</h2>
+            <p>Просторный зал площадью 900 кв/м</p>
+            <p>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+            <p class="gym__only-desktop-text">В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;<nobr>кардио-зона</nobr> с&nbsp;40 тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+          </div>
+          <div class="gym__image-wrapper">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/images/mobile/gym-mobile.webp 1x, img/images/retina/gym-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1199px)" srcset="img/images/tablet/gym-tablet.webp 1x, img/images/retina/gym-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/images/desktop/gym-desktop.webp 1x, img/images/retina/gym-desktop@2x.webp 2x">
+              <img src="img/images/desktop/gym-desktop.jpg" srcset="img/images/retina/gym-desktop@2x.jpg" alt="Светлый просторный тренажерный зал" width="660" height="401">
+            </picture>
+            <div class="gym__video-wrapper">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/images/mobile/video-mobile.webp 1x, img/images/retina/video-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1199px)" srcset="img/images/tablet/video-tablet.webp 1x, img/images/retina/video-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/images/desktop/video-desktop.webp 1x, img/images/retina/video-desktop@2x.webp 2x">
+                <img src="img/images/desktop/video-desktop.jpg" srcset="img/images/retina/video-desktop@2x.jpg" alt="Заставка для видео о тренажнрном зале." width="364" height="228">
               </picture>
+              <a class="gym__button" href="#" aria-label="Смотреть видео о нашем тренажерном зале на Ютубе.">
+                <svg class="gym__button-icon" viewBox="0 0 17 17" aria-hidden="true"
+              width="17" height="17">
+              <use xlink:href="img/sprite.svg#play-button-icon"></use>
+            </svg>
+              </a>
             </div>
           </div>
         </div>
+      </div>
+    </section>
+    <section class="subscription">
+      <div class="container">
+        <h3>Абонементы</h3>
+        <div class="subscription__wrapper tabs" data-tabs="parent" data-delay="200">
+          <div class="tabs__controls" data-tabs="controls">
+            <button class="tabs__control" type="button" data-tabs="control" data-index="0">1 месяц</button>
+            <button class="tabs__control" type="button" data-tabs="control" data-index="1">6 месяцев</button>
+            <button class="tabs__control" type="button" data-tabs="control" data-index="2">12 месяцев</button>
+          </div>
+          <div class="tabs__content" data-tabs="content">
+            <ul class="tabs__list list for-load" data-tabs="element">
+              <li class="tabs__list-item" tabindex="0">
+                <div class="tabs__list-item-title">
+                  <h4>С тренером</h4>
+                  <p>12 занятий</p>
+                </div>
+                <div class="tabs__price-wrapper">
+                  <span data-price="5000">5000</span>
+                  <svg class="tabs__price-icon" viewBox="0 0 30 42" aria-hidden="true" width="30" height="42">
+                    <use xlink:href="img/sprite.svg#rouble"></use>
+                  </svg>
+                </div>
+                <a class="tabs__link btn" href="#">Купить абонемент</a>
+              </li>
+              <li class="tabs__list-item" tabindex="0">
+                <div class="tabs__list-item-title">
+                  <h4>Дневной</h4>
+                  <p>с 8:00 до 17:00 </p>
+                </div>
+                <div class="tabs__price-wrapper">
+                  <span data-price="1700">1700</span>
+                  <svg class="tabs__price-icon" viewBox="0 0 30 42" aria-hidden="true" width="30" height="42">
+                    <use xlink:href="img/sprite.svg#rouble"></use>
+                  </svg>
+                </div>
+                <a class="tabs__link btn" href="#">Купить абонемент</a>
+              </li>
+              <li class="tabs__list-item" tabindex="0">
+                <div class="tabs__list-item-title">
+                  <h4>Полный день</h4>
+                  <p>с 8:00 до 22:00 </p>
+                </div>
+                <div class="tabs__price-wrapper">
+                  <span data-price="2700">2700</span>
+                  <svg class="tabs__price-icon" viewBox="0 0 30 42" aria-hidden="true" width="30" height="42">
+                    <use xlink:href="img/sprite.svg#rouble"></use>
+                  </svg>
+                </div>
+                <a class="tabs__link btn" href="#">Купить абонемент</a>
+              </li>
+            </ul>
+            <ul class="tabs__list list" data-tabs="element">
+              <li class="tabs__list-item" tabindex="0">
+                <div class="tabs__list-item-title">
+                  <h4>С тренером</h4>
+                  <p>12 занятий</p></div>
+                <div class="tabs__price-wrapper">
+                  <span data-price="30000">30000</span>
+                  <svg class="tabs__price-icon" viewBox="0 0 30 42" aria-hidden="true" width="30" height="42">
+                    <use xlink:href="img/sprite.svg#rouble"></use>
+                  </svg>
+                </div>
+                <a class="tabs__link btn" href="#">Купить абонемент</a>
+              </li>
+              <li class="tabs__list-item" tabindex="0">
+                <div class="tabs__list-item-title">
+                  <h4>Дневной</h4>
+                  <p>с 8:00 до 17:00 </p>
+                </div>
+                <div class="tabs__price-wrapper">
+                  <span data-price="10000">10000</span>
+                  <svg class="tabs__price-icon" viewBox="0 0 30 42" aria-hidden="true" width="30" height="42">
+                    <use xlink:href="img/sprite.svg#rouble"></use>
+                  </svg>
+                </div>
+                <a class="tabs__link btn" href="#">Купить абонемент</a>
+              </li>
+              <li class="tabs__list-item" tabindex="0">
+                <div class="tabs__list-item-title">
+                  <h4>Полный день</h4>
+                  <p>1с 8:00 до 22:00 </p>
+                </div>
+                <div class="tabs__price-wrapper">
+                  <span data-price="15000">15000</span>
+                  <svg class="tabs__price-icon" viewBox="0 0 30 42" aria-hidden="true" width="30" height="42">
+                    <use xlink:href="img/sprite.svg#rouble"></use>
+                  </svg>
+                </div>
+                <a class="tabs__link btn" href="#">Купить абонемент</a>
+              </li>
+            </ul>
+            <ul class="tabs__list list" data-tabs="element">
+              <li class="tabs__list-item" tabindex="0">
+                <div class="tabs__list-item-title">
+                  <h4>С тренером</h4>
+                  <p>12 занятий</p>
+                </div>
+                <div class="tabs__price-wrapper">
+                  <span data-price="50000">50000</span>
+                  <svg class="tabs__price-icon" viewBox="0 0 30 42" aria-hidden="true" width="30" height="42">
+                    <use xlink:href="img/sprite.svg#rouble"></use>
+                  </svg>
+                </div>
+                <a class="tabs__link btn" href="#">Купить абонемент</a>
+              </li>
+              <li class="tabs__list-item" tabindex="0">
+                <div class="tabs__list-item-title">
+                  <h4>Дневной</h4>
+                  <p>с 8:00 до 17:00 </p>
+                </div>
+                <div class="tabs__price-wrapper">
+                  <span data-price="10200">10200</span>
+                  <svg class="tabs__price-icon" viewBox="0 0 30 42" aria-hidden="true" width="30" height="42">
+                    <use xlink:href="img/sprite.svg#rouble"></use>
+                  </svg>
+                </div>
+                <a class="tabs__link btn" href="#">Купить абонемент</a>
+              </li>
+              <li class="tabs__list-item" tabindex="0">
+                <div class="tabs__list-item-title">
+                  <h4>Полный день</h4>
+                  <p>1с 8:00 до 22:00 </p>
+                </div>
+                <div class="tabs__price-wrapper">
+                  <span data-price="16200">16200</span>
+                  <svg class="tabs__price-icon" viewBox="0 0 30 42" aria-hidden="true" width="30" height="42">
+                    <use xlink:href="img/sprite.svg#rouble"></use>
+                  </svg>
+                </div>
+                <a class="tabs__link btn" href="#">Купить абонемент</a>
+              </li>
+            </ul>        
+          </div>
+        </div>
+      </div>
+      <div class="subscription__image-wrapper">
+        <picture>
+          <source type="image/webp" media="(max-width: 1199px)" srcset="img/images/tablet/weights-tablet.webp 1x, img/images/retina/weights-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/images/desktop/weights-desktop.webp 1x, img/images/retina/weights-desktop@2x.webp 2x">
+          <img src="img/images/desktop/weights-desktop.png" srcset="img/images/retina/weights-desktop@2x.jpg" alt="Красные блины для штанги." width="284" height="341">
+        </picture>
+    </div>
+    </section>
+    <section class="competitions">
+      <div class="container">
+        <div class="competitions__wrapper">
+          <div class="competitions__content">
+            <div class="competitions__info">
+              <h4>Super <br> Games</h4>
+              <dl class="competitions__list">
+                <dt class="competitions__termin">Дата</dt>
+                <dd class="competitions__description">
+                  <span>7</span>
+                  <small>Марта <br> 2019</small>
+                </dd>
+                <dt class="competitions__termin">Время</dt>
+                <dd class="competitions__description">12:00</dd>
+              </dl>
+            </div>
+            <p>Ежегодные соревнования по CrossFit</p>
+            <a class="competitions__link btn" href="#">Заполнить заявку</a>
+          </div>
+          <div class="competitions__image-wrapper">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/images/mobile/crossfit-event-mobile.webp 1x, img/images/retina/crossfit-event-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1199px)" srcset="img/images/tablet/crossfit-event-tablet.webp 1x, img/images/retina/crossfit-event-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/images/desktop/crossfit-event-desktop.webp 1x, img/images/retina/crossfit-event-desktop@2x.webp 2x">
+              <img src="img/images/desktop/crossfit-event-desktop.jpg" srcset="img/images/retina/crossfit-event-desktop@2x.jpg" alt="Спортсмен в облаке талька." width="660" height="500">
+            </picture>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section class="coaches">
+      <div class="container">
+        <h4>Тренеры</h4>
+        <div class="slider">
+        <div class="coaches__wrapper swiper">
+          <ul class="coaches__list slider__list list swiper-wrapper">
+            <li class="slider__list-item card swiper-slide">
+              <div class="card__image-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="img/images/desktop/coach1-desktop.webp 1x, img/images/retina/coach1-desktop@2x.webp 2x">
+                  <img src="img/images/desktop/coach1-desktop.jpg" srcset="img/images/retina/coach1-desktop@2x.jpg" alt="Тренер Анна Павлова." width="260" height="294">
+                </picture>
+                <h5>Анна Павлова</h5>
+              </div>
+              <div class="card__content-wrapper">
+                <h5>Анна Павлова</h5>
+                <p>CrossFit</p>
+                <ul class="card__list">
+                  <li class="card__list-item">Certified Level 3 Trainer</li>
+                  <li class="card__list-item">Победитель чемпионата России по CrossFit </li>
+                  <li class="card__list-item">Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </li>
+            <li class="slider__list-item card swiper-slide">
+              <div class="card__image-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="img/images/desktop/coach2-desktop.webp 1x, img/images/retina/coach2-desktop@2x.webp 2x">
+                  <img src="img/images/desktop/coach2-desktop.jpg" srcset="img/images/retina/coach2-desktop@2x.jpg" alt="Тренер Алексей Лавров." width="260" height="294">
+                </picture>
+                <h5>Алексей Лавров</h5>
+              </div>
+              <div class="card__content-wrapper">
+                <h5>Алексей Лавров</h5>
+                <p>CrossFit</p>
+                <ul class="card__list">
+                  <li class="card__list-item">Certified Level 3 Trainer</li>
+                  <li class="card__list-item">Победитель чемпионата России по CrossFit </li>
+                  <li class="card__list-item">Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </li>
+            <li class="slider__list-item card swiper-slide">
+              <div class="card__image-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="img/images/desktop/coach3-desktop.webp 1x, img/images/retina/coach3-desktop@2x.webp 2x">
+                  <img src="img/images/desktop/coach3-desktop.jpg" srcset="img/images/retina/coach3-desktop@2x.jpg" alt="Тренер Александр Пашков." width="260" height="294">
+                </picture>
+                <h5>Александр Пашков</h5>
+              </div>
+              <div class="card__content-wrapper">
+                <h5>Александр Пашков</h5>
+                <p>CrossFit</p>
+                <ul class="card__list">
+                  <li class="card__list-item">Certified Level 3 Trainer</li>
+                  <li class="card__list-item">Победитель чемпионата России по CrossFit </li>
+                  <li class="card__list-item">Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </li>
+            <li class="slider__list-item card swiper-slide">
+              <div class="card__image-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="img/images/desktop/coach4-desktop.webp 1x, img/images/retina/coach4-desktop@2x.webp 2x">
+                  <img src="img/images/desktop/coach4-desktop.jpg" srcset="img/images/retina/coach4-desktop@2x.jpg" alt="Тренер Мария Кетова." width="260" height="294">
+                </picture>
+                <h5>Мария Кетова</h5>
+              </div>
+              <div class="card__content-wrapper">
+                <h5>Мария Кетова</h5>
+                <p>CrossFit</p>
+                <ul class="card__list">
+                  <li class="card__list-item">Certified Level 3 Trainer</li>
+                  <li class="card__list-item">Победитель чемпионата России по CrossFit </li>
+                  <li class="card__list-item">Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </li>
+            <li class="slider__list-item card swiper-slide">
+              <div class="card__image-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="img/images/desktop/coach1-desktop.webp 1x, img/images/retina/coach1-desktop@2x.webp 2x">
+                  <img src="img/images/desktop/coach1-desktop.jpg" srcset="img/images/retina/coach1-desktop@2x.jpg" alt="Тренер Анна Павлова." width="260" height="294">
+                </picture>
+                <h5>Анна Павлова</h5>
+              </div>
+              <div class="card__content-wrapper">
+                <h5>Анна Павлова</h5>
+                <p>CrossFit</p>
+                <ul class="card__list">
+                  <li class="card__list-item">Certified Level 3 Trainer</li>
+                  <li class="card__list-item">Победитель чемпионата России по CrossFit </li>
+                  <li class="card__list-item">Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </li>
+            <li class="slider__list-item card swiper-slide">
+              <div class="card__image-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="img/images/desktop/coach1-desktop.webp 1x, img/images/retina/coach1-desktop@2x.webp 2x">
+                  <img src="img/images/desktop/coach1-desktop.jpg" srcset="img/images/retina/coach1-desktop@2x.jpg" alt="Тренер Анна Павлова." width="260" height="294">
+                </picture>
+                <h5>Анна Павлова</h5>
+              </div>
+              <div class="card__content-wrapper">
+                <h5>Анна Павлова</h5>
+                <p>CrossFit</p>
+                <ul class="card__list">
+                  <li class="card__list-item">Certified Level 3 Trainer</li>
+                  <li class="card__list-item">Победитель чемпионата России по CrossFit </li>
+                  <li class="card__list-item">Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </li>
+            <li class="slider__list-item card swiper-slide">
+              <div class="card__image-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="img/images/desktop/coach1-desktop.webp 1x, img/images/retina/coach1-desktop@2x.webp 2x">
+                  <img src="img/images/desktop/coach1-desktop.jpg" srcset="img/images/retina/coach1-desktop@2x.jpg" alt="Тренер Анна Павлова." width="260" height="294">
+                </picture>
+                <h5>Анна Павлова</h5>
+              </div>
+              <div class="card__content-wrapper">
+                <h5>Анна Павлова</h5>
+                <p>CrossFit</p>
+                <ul class="card__list">
+                  <li class="card__list-item">Certified Level 3 Trainer</li>
+                  <li class="card__list-item">Победитель чемпионата России по CrossFit </li>
+                  <li class="card__list-item">Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </li>
+            <li class="slider__list-item card swiper-slide">
+              <div class="card__image-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="img/images/desktop/coach1-desktop.webp 1x, img/images/retina/coach1-desktop@2x.webp 2x">
+                  <img src="img/images/desktop/coach1-desktop.jpg" srcset="img/images/retina/coach1-desktop@2x.jpg" alt="Тренер Анна Павлова." width="260" height="294">
+                </picture>
+                <h5>Анна Павлова</h5>
+              </div>
+              <div class="card__content-wrapper">
+                <h5>Анна Павлова</h5>
+                <p>CrossFit</p>
+                <ul class="card__list">
+                  <li class="card__list-item">Certified Level 3 Trainer</li>
+                  <li class="card__list-item">Победитель чемпионата России по CrossFit </li>
+                  <li class="card__list-item">Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </li>
+            <li class="slider__list-item card swiper-slide">
+              <div class="card__image-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="img/images/desktop/coach1-desktop.webp 1x, img/images/retina/coach1-desktop@2x.webp 2x">
+                  <img src="img/images/desktop/coach1-desktop.jpg" srcset="img/images/retina/coach1-desktop@2x.jpg" alt="Тренер Анна Павлова." width="260" height="294">
+                </picture>
+                <h5>Анна Павлова</h5>
+              </div>
+              <div class="card__content-wrapper">
+                <h5>Анна Павлова</h5>
+                <p>CrossFit</p>
+                <ul class="card__list">
+                  <li class="card__list-item">Certified Level 3 Trainer</li>
+                  <li class="card__list-item">Победитель чемпионата России по CrossFit </li>
+                  <li class="card__list-item">Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="slider-arrows">
+        <button class="slider__arrow slider__arrow--left swiper-button-prev-unique" type="button">
+          <svg class="slider__icon" viewBox="0 0 16 32" aria-hidden="true" width="16" height="32">
+            <use xlink:href="img/sprite.svg#slider-arrow"></use>
+          </svg>
+          <span class="visually-hidden">Пролистать слайды назад</span>
+        </button>
+        <button class="slider__arrow slider__arrow--right swiper-button-next-unique" type="button">
+          <svg class="slider__icon slider__icon--next" viewBox="0 0 16 32" aria-hidden="true" width="16" height="32">
+            <use xlink:href="img/sprite.svg#slider-arrow"></use>
+          </svg>
+          <span class="visually-hidden">Пролистать слайды вперед</span>
+        </button>
+      </div>
+    </div>
+      </div>
+    </section>
+    <section class="advantages">
+      <div class="container advantages__container">
+        <h5>Наши преимущества</h5>
+        <ul class="advantages__list list">
+          <li class="advantages__item advantages__item--center">
+            <div class="advantages__item-inner">
+              <span>100</span>
+              <small>Тренажеров</small>
+            </div>
+            <div class="advantages__item-content">
+              <p>Современные тренажеры на&nbsp;все группы мышц</p>
+            </div>
+          </li>
+          <li class="advantages__item advantages__item--square">
+            <div class="advantages__item-inner">
+              <span>900</span>
+              <small>кв/м</small>
+            </div>
+            <div class="advantages__item-content">
+              <h5>Площадь</h5>
+              <p>Занимайтесь без очередей и&nbsp;толпучки</p>
+            </div>
+          </li>
+          <li class="advantages__item advantages__item--parking">
+            <div class="advantages__item-inner">
+              <span>70</span>
+              <small>машин</small>
+            </div>
+            <div class="advantages__item-content">
+              <h5>Собственная парковка</h5>
+              <p>Вы&nbsp;всегда найдете место для своей машины на&nbsp;нашей парковке</p>
+            </div>
+          </li>
+          <li class="advantages__item advantages__item--comfort">
+            <div class="advantages__item-inner">
+              <span>350</span>
+              <small>мест</small>
+            </div>
+            <div class="advantages__item-content">
+              <h5>Комфорт</h5>
+              <p>Просторные раздевалки, душевые, фен, <nobr>Wi-Fi</nobr>, кулеры</p>
+            </div>
+          </li>
+          <li class="advantages__item advantages__item--experience">
+            <div class="advantages__item-inner">
+              <span>5+</span>
+              <small>лет</small>
+            </div>
+            <div class="advantages__item-content">
+              <h5>Тренерский опыт</h5>
+              <p>Добивайтесь своих целей быстрее с&nbsp;профессиональным тренером</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="promotion">
+      <div class="container">
+        <h5>Акции</h5>
+        <div class="promotion__wrapper">
+          <div class="promotion__image-offer image-offer">
+            <div class="image-offer__content">
+              <small>Год</small>
+              <span>4999</span>
+              <p>Безлимитный абонемент в&nbsp;тренажерный зал</p>
+              <a class="image-offer__link btn" href=#>Подробнее</a>
+            </div>
+            <div class="image-offer__image-wrapper">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/images/mobile/fitness-girl-mobile.webp 1x, img/images/retina/fitness-girl-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1199px)" srcset="img/images/tablet/fitness-girl-tablet.webp 1x, img/images/retina/fitness-girl-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/images/desktop/fitness-girl-desktop.webp 1x, img/images/retina/fitness-girl-desktop@2x.webp 2x">
+                <img src="img/images/desktop/fitness-girl-desktop.jpg" srcset="img/images/retina/fitness-girl-desktop.jpg@2x.jpg" alt="Спортивная девушка на фоне голубого неба." width="280" height="462">
+              </picture>
+            </div>
+          </div>
+          <ul class="promotion__list list">
+            <li class="promotion__item">
+              <div class="promotion__item-header">
+                <h6>Месяц бесплатно</h6>
+                <p>Приведи&nbsp;друга, получи <br> абонемент в&nbsp;подарок</p>
+              </div>
+              <a class="promotion__list-link btn">Подробнее</a>
+            </li>
+            <li class="promotion__item">
+              <div class="promotion__item-header">
+                <h6>Скидка 20%</h6>
+                <p>Корпоративный фитнес с&nbsp;командой</p>
+              </div>
+              <a class="promotion__list-link btn">Подробнее</a>
+            </li>
+          </ul>
+        </div>  
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="container">
+          <h5>Отзывы</h5>
+          <div class="slider slider--reviews">
+            <div class="reviews__wrapper swiper">
+              <ul class="reviews__list slider__list list swiper-wrapper">
+                <li class="reviews__item swiper-slide">
+                  <div class="reviews__image-header">
+                  <div class="reviews__image-wrapper">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/images/mobile/feedback-avatar-mobile.webp 1x, img/images/retina/feedback-avatar-mobile@2x.webp 2x">
+                      <source type="image/webp" srcset="img/images/desktop/feedback-avatar-desktop.webp 1x, img/images/retina/feedback-avatar-desktop@2x.webp 2x">
+                      <img src="img/images/desktop/feedback-avatar-desktop.png" srcset="img/images/retina/feedback-avatar-desktop@2x.png" alt="Лицо темноволосой девушки на сером фоне" width="80" height="80">
+                    </picture>
+                  </div>
+                  <h5>Анна <br> Орлова</h5>
+                  </div>
+                  <div class="reviews__content">
+                    <h5>Анна Орлова</h5>
+                    <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
+                  </div>
+                </li>
+                <li class="reviews__item swiper-slide">
+                  <div class="reviews__image-header">
+                  <div class="reviews__image-wrapper">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/images/mobile/feedback-avatar-mobile.webp 1x, img/images/retina/feedback-avatar-mobile@2x.webp 2x">
+                      <source type="image/webp" srcset="img/images/desktop/feedback-avatar-desktop.webp 1x, img/images/retina/feedback-avatar-desktop@2x.webp 2x">
+                      <img src="img/images/desktop/feedback-avatar-desktop.png" srcset="img/images/retina/feedback-avatar-desktop@2x.png" alt="Лицо темноволосой девушки на сером фоне" width="80" height="80">
+                    </picture>
+                  </div>
+                  <h5>Анна <br> Орлова</h5>
+                  </div>
+                  <div class="reviews__content">
+                    <h5>Анна Орлова</h5>
+                    <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
+                  </div>
+                </li>
+                <li class="reviews__item swiper-slide">
+                  <div class="reviews__image-header">
+                  <div class="reviews__image-wrapper">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/images/mobile/feedback-avatar-mobile.webp 1x, img/images/retina/feedback-avatar-mobile@2x.webp 2x">
+                      <source type="image/webp" srcset="img/images/desktop/feedback-avatar-desktop.webp 1x, img/images/retina/feedback-avatar-desktop@2x.webp 2x">
+                      <img src="img/images/desktop/feedback-avatar-desktop.png" srcset="img/images/retina/feedback-avatar-desktop@2x.png" alt="Лицо темноволосой девушки на сером фоне" width="80" height="80">
+                    </picture>
+                  </div>
+                  <h5>Анна <br> Орлова</h5>
+                  </div>
+                  <div class="reviews__content">
+                    <h5>Анна Орлова</h5>
+                    <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
+                  </div>
+                </li>
+                <li class="reviews__item swiper-slide">
+                  <div class="reviews__image-header">
+                  <div class="reviews__image-wrapper">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/images/mobile/feedback-avatar-mobile.webp 1x, img/images/retina/feedback-avatar-mobile@2x.webp 2x">
+                      <source type="image/webp" srcset="img/images/desktop/feedback-avatar-desktop.webp 1x, img/images/retina/feedback-avatar-desktop@2x.webp 2x">
+                      <img src="img/images/desktop/feedback-avatar-desktop.png" srcset="img/images/retina/feedback-avatar-desktop@2x.png" alt="Лицо темноволосой девушки на сером фоне" width="80" height="80">
+                    </picture>
+                  </div>
+                  <h5>Анна <br> Орлова</h5>
+                  </div>
+                  <div class="reviews__content">
+                    <h5>Анна Орлова</h5>
+                    <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
+                  </div>
+                </li>
+                <li class="reviews__item swiper-slide">
+                  <div class="reviews__image-header">
+                  <div class="reviews__image-wrapper">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/images/mobile/feedback-avatar-mobile.webp 1x, img/images/retina/feedback-avatar-mobile@2x.webp 2x">
+                      <source type="image/webp" srcset="img/images/desktop/feedback-avatar-desktop.webp 1x, img/images/retina/feedback-avatar-desktop@2x.webp 2x">
+                      <img src="img/images/desktop/feedback-avatar-desktop.png" srcset="img/images/retina/feedback-avatar-desktop@2x.png" alt="Лицо темноволосой девушки на сером фоне" width="80" height="80">
+                    </picture>
+                  </div>
+                  <h5>Анна <br> Орлова</h5>
+                  </div>
+                  <div class="reviews__content">
+                    <h5>Анна Орлова</h5>
+                    <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="slider-arrows slider-arrows--reviews">
+              <button class="slider__arrow slider__arrow--left slider__arrow--left-review swiper-button-prev-unique" type="button">
+                <svg class="slider__icon" viewBox="0 0 16 32" aria-hidden="true" width="16" height="32">
+                  <use xlink:href="img/sprite.svg#slider-arrow"></use>
+                </svg>
+                <span class="visually-hidden">Пролистать слайды назад</span>
+              </button>
+              <button class="slider__arrow slider__arrow--right slider__arrow--right-review swiper-button-next-unique" type="button">
+                <svg class="slider__icon slider__icon--next" viewBox="0 0 16 32" aria-hidden="true" width="16" height="32">
+                  <use xlink:href="img/sprite.svg#slider-arrow"></use>
+                </svg>
+                <span class="visually-hidden">Пролистать слайды вперед</span>
+              </button>
+            </div>
+          </div>
+      </div>
+    </section>
+    <div class="sections-wrapper">
+      <section class="sign-up">
+        <h6 class="visually-hidden">Форма для записи на бесплатное занятие</h6>
+        <div class="sign-up__wrapper">
+        <div class="sign-up__form sign-up-form" data-form-validate data-callback="base">
+          <h6>Бесплатное занятие</h6>
+          <form action="https://echo.htmlacademy.ru/" method="post">
+            <div class="sign-up-form__input-wrapper">
+              <label for="name" data-required data-validate-type="text" data-limitation="name"
+                data-message-base="Обязательное поле" data-message-extra="Проверьте заполнениеnp">
+                <input class="booking-form__input" type="text" name="name" id="name" placeholder="Имя"
+                  aria-label="Укажите ваше имя" autocomplete="off" required data-focus
+                  pattern="^[A-Za-zА-Яа-яЁё\- ]+$">
+              </label>
+              <label for="phone" data-required data-validate-type="phone" data-message-base="Обязательное поле"
+                data-message-extra="Проверьте заполнение">
+                <input class="booking-form__input" type="tel" name="tel" id="phone" placeholder="Телефон"
+                  aria-label="Укажите ваш номер телефона" required autocomplete="off" pattern="^\+?[\d ()-]+$">
+              </label>
+            </div>
+            <button class="sign-up-form__button btn" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
       </section>
+      <section class="contacts">
+        <div class="contacts__wrapper">
+        <h6>Контакты</h6>
+        <ul class="contacts__list list">
+          <li class="contacts__item">
+            <h7>Адрес:</h7>
+            <p>г.&nbsp;Омск, ул. 60 лет Октября, 7</p>
+          </li>
+          <li class="contacts__item contacts__phone">
+            <h7>Телефон:</h7>
+            <p>8-800-555-55-55</p>
+          </li>
+          <li class="contacts__item">
+            <h7>График работы:</h7>
+            <p><nobr>Пн-Вс</nobr>: с&nbsp;8:00 до&nbsp;22:00</p>
+          </li>
+          <li class="contacts__item">
+            <h7>Email:</h7>
+            <p>omsk@supergym.ru</p>
+          </li>
+        </ul>
+      </div>
+      </section>
+    </div>
     </main>
-    <footer>
-      <div class="container"></div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+        <a class="logo logo--footer" href="index.html" aria-label="Главная страница">
+          <svg class="logo__img logo__img--footer" viewBox="0 0 122 22" aria-hidden="true"
+            width="122" height="22">
+            <use xlink:href="img/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <nav class="footer__nav">
+          <ul class="footer__nav-list footer-nav list">
+            <li class="footer-nav-item">
+              <a href="#">Услуги</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#">Абонементы</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#">Акции</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#">Тренеры</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#">Расписание</a>
+            </li>
+          </ul>
+        </nav>
+          <ul class="footer__social-list social-list list">
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--vk" href="#" target="_blank"
+                aria-label="Перейти на нашу страницу Вконтакте">
+                <svg class="social-list__icon social-list__icon--vk" width="12" height="7" viewBox="0 0 12 7"
+                  aria-hidden="true" focusable="false">
+                  <use xlink:href="img/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--ok" href="#" target="_blank"
+                aria-label="Перейти на нашу страницу в Одноклассниках">
+                <svg class="social-list__icon social-list__icon--ok" width="9" height="16" viewBox="0 0 9 16"
+                  aria-hidden="true" focusable="false">
+                  <use xlink:href="img/sprite.svg#ok"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--reddit" href="#" target="_blank"
+                aria-label="Перейти на нашу страницу в Реддит">
+                <svg class="social-list__icon social-list__icon--reddit" width="14" height="14" viewBox="0 0 14 14"
+                  aria-hidden="true" focusable="false">
+                  <use xlink:href="img/sprite.svg#reddit"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </ul>
+      </div>
+      </div>
     </footer>
   </div>
 

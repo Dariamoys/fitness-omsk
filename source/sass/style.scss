@@ -3,7 +3,7 @@
 
 @import "vendor/normalize";
 // Swiper 7.4.1
-// @import "vendor/swiper";
+@import "vendor/swiper";
 
 // Global
 // ---------------------------------
@@ -24,7 +24,28 @@
 @import "blocks/custom-select";
 @import "blocks/page-header";
 @import "blocks/main-nav";
-@import "blocks/hero";
+@import "blocks/logo";
+@import "blocks/gym";
+@import "blocks/subscription";
+@import "blocks/tabs";
+@import "blocks/data-tabs";
+@import "blocks/competitions";
+@import "blocks/coaches";
+@import "blocks/slider";
+@import "blocks/card";
+@import "blocks/advantages";
+@import "blocks/promotion";
+@import "blocks/image-offer";
+@import "blocks/reviews";
+@import "blocks/sections-wrapper";
+@import "blocks/sign-up";
+@import "blocks/sign-up-form";
+@import "blocks/contacts";
+@import "blocks/footer";
+@import "blocks/footer-nav";
+@import "blocks/social-list";
+
+
 
 // ---------------------------------
 

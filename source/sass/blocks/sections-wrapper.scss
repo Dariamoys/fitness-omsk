@@ -1,0 +1,10 @@
+.sections-wrapper {
+    display: grid;
+    overflow-x: hidden;
+    grid-template-columns: repeat(2, 50vw);
+
+    @include vp-1199 {
+        grid-template-columns: 1fr;
+     }
+
+}

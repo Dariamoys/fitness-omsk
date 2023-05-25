@@ -1,0 +1,265 @@
+.gym {
+    padding-top: 120px;
+    padding-bottom: 235px;
+    background-color: $color-default-white;
+
+    @include vp-1199 {
+        padding: 66px 0;
+        padding-bottom: 183px;
+    }
+
+    @include vp-767 {
+        padding: 64px 0;
+        padding-bottom: 67px;
+    }
+}
+
+.gym__container {
+    @include vp-767 {
+        padding: 0;
+    }
+}
+
+.gym__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 65px;
+
+    @include vp-1199 {
+        text-align: center;
+        gap: 44px;
+        flex-direction: column;
+    }
+
+    @include vp-767 {
+        text-align: left;
+        gap: 35px;
+        max-width: 100%;
+    }
+}
+
+.gym__content-wrapper {
+    padding-top: 36px;
+    padding-left: 60px;
+    flex-basis: 37%;
+
+    @include vp-1279 {
+        padding-left: 0;
+    }
+
+    @include vp-1199 {
+        flex-basis: 100%;
+    }
+
+    @include vp-767 {
+        padding: 0 15px;
+    }
+}
+
+.gym h2 {
+    margin: 0;
+    margin-bottom: 9px;
+    font-family: $ff-alumni-sans;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: 0.03em;
+    color: $color-text-blue;
+
+    @include vp-1199 {
+        margin-bottom: 0;
+        font-size: 42px;
+        line-height: 50px;
+        transform: translateX(-9px);
+    }
+
+    @include vp-767 {
+        margin-bottom: 5px;
+        font-size: 32px;
+        line-height: 38px;
+        transform: translateX(0);
+    }
+}
+
+.gym p:first-of-type {
+    margin: 0;
+    margin-bottom: 36px;
+    font-family: $ff-roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    
+    @include vp-1199 {
+        margin-bottom: 32px;
+    }
+
+    @include vp-767 {
+        margin-bottom: 23px;
+    }
+}
+
+.gym p {
+    margin: 0;
+    font-family: $ff-roboto;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-text-blue;
+
+    @include vp-1199 {
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    @include vp-767 {
+        padding: 0;
+    }
+}
+
+.gym p:not(:first-of-type) {
+    @include vp-767 {
+        padding-right: 35px;
+    }
+}
+
+.gym__content-wrapper .gym__only-desktop-text {
+    margin-top: 10px;
+
+    @include vp-1199 {
+        display: none;
+    }
+}
+
+.gym__image-wrapper {
+    position: relative;
+    flex-basis: 57%;
+    flex-shrink: 0;
+    height: 100%;
+
+    @include vp-1199 {
+        flex-shrink: 0;
+        flex-basis: 100%;
+        font-size: 16px;
+        line-height: 24px;   
+    }
+
+    @include vp-767 {
+        padding: 0;
+        width: 100%;
+        aspect-ratio: 1.92/1;
+    }
+}
+
+.gym__image-wrapper img {
+    width: 660px;
+    height: 401px;
+    object-fit: cover;
+
+    @include vp-1199 {
+        width: 100%;
+        height: auto;
+    }
+
+    @include vp-767 {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+
+.gym__video-wrapper {
+    position: absolute;
+    content: "";
+    bottom: -28%;
+    left: -9%;
+    max-width: 364px;
+    min-height: 228px;
+
+    @include vp-1199 {
+        width: 266px;
+        max-height: 167px;
+        bottom: -42%;
+        left: 30%;
+    }
+
+    @include vp-767 {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        width: 100%;
+        max-width: 100%;
+        max-height: none;
+        min-height: auto;
+        aspect-ratio: 1.92/1;
+    }
+}
+
+
+.gym__video-wrapper img {
+    object-fit: cover;
+    width: 364px;
+    height: 228px;
+
+    @include vp-1199 {
+        width: 266px;
+        height: 167px;
+    }
+
+    @include vp-767 {
+        flex-basis: 100%;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 0;
+    }
+}
+
+.gym__button {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: linear-gradient(44.89deg, #003D85 25.38%, #B80027 74.89%);
+    transform: translate(-50%, -50%);
+
+    @include vp-1199 {
+        width: 52px;
+        height: 52px;
+    }
+}
+
+.gym__button::before {
+    position: absolute;
+    content: "";
+    right: -20%;
+    top: -20%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(80deg, #ed0233 20%, #003eb7 90%);
+    mask: radial-gradient(48px, $color-transparent 100%, $color-default-white);
+    opacity: 0.2;
+
+    @include vp-1199 {
+        right: -20%;
+        top: -19%;
+        width: 72px;
+        height: 72px;
+        mask: radial-gradient(34px, $color-transparent 100%, $color-default-white);
+    }
+}
+
+.gym__button svg {
+    transform: translateX(2px);
+
+    @include vp-1199 {
+    transform: translateX(4px);
+    }
+}
