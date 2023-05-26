@@ -20,11 +20,11 @@
 
   &:disabled {
     opacity: 0.5;
-
     pointer-events: none;
   }
 
-  // @include hover-focus {
-  //   opacity: 0.8;
-  // }
+  @include focus {
+    border: none;
+    outline: 2px solid $color-default-white;
+  }
 }

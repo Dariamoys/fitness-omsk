@@ -199,6 +199,7 @@
   cursor: auto;
   pointer-events: none;
 }
+
 .swiper-button-prev:after,
 .swiper-button-next:after {
   font-family: swiper-icons;
@@ -209,6 +210,7 @@
   font-variant: initial;
   line-height: 1;
 }
+
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
   left: 10px;

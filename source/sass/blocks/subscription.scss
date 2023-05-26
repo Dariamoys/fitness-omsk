@@ -1,68 +1,68 @@
 .subscription {
-    position: relative;
-    z-index: 3;
-    padding: 120px 0;
+  position: relative;
+  z-index: 3;
+  padding: 120px 0;
 
-    @include vp-1199 {
-        padding-top: 100px;
-        padding-bottom: 102px;
-    }
+  @include vp-1199 {
+    padding-top: 100px;
+    padding-bottom: 102px;
+  }
 
-    @include vp-767 {
-        padding-top: 65px;
-        padding-bottom: 71px;
-    }
+  @include vp-767 {
+    padding-top: 65px;
+    padding-bottom: 71px;
+  }
 }
 
 .subscription h3 {
-    margin: 0;
-    margin-bottom: 16px;
-    font-family: $ff-alumni-sans;
-    font-weight: 600;
-    font-size: 54px;
-    line-height: 65px;
-    letter-spacing: 0.03em;
-    text-align: center;
+  margin: 0;
+  margin-bottom: 16px;
+  font-family: $ff-alumni-sans;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  text-align: center;
 
-    @include vp-1199 {
-        transform: translateX(-7px);
-        margin-bottom: 21px;
-        font-size: 42px;
-        line-height: 50px;
-    }
+  @include vp-1199 {
+    transform: translateX(-7px);
+    margin-bottom: 21px;
+    font-size: 42px;
+    line-height: 50px;
+  }
 
-    @include vp-767 {
-        margin-bottom: 20px;
-        font-size: 32px;
-        line-height: 38px;
-    }
+  @include vp-767 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    line-height: 38px;
+  }
 }
 
 .subscription__image-wrapper {
-    position: absolute;
-    z-index: 2;
-    content: "";
-    bottom: 0;
-    right: 0;
-    width: 286px;
-    height: 334px;
+  position: absolute;
+  z-index: 2;
+  content: "";
+  bottom: 0;
+  right: 0;
+  width: 286px;
+  height: 334px;
 
-    @include vp-1199 {
-        width: 344px;
-        height: 325px;
-    }
+  @include vp-1199 {
+    width: 344px;
+    height: 325px;
+  }
 
-    @include vp-767 {
-        display: none;
-    }
+  @include vp-767 {
+    display: none;
+  }
 }
 
 .subscription__image-wrapper img {
-    width: 309px;
-    height: 477px;
+  width: 309px;
+  height: 477px;
 
-    @include vp-1199 {
-        width: 349px;
-        height: 454px;
-    }
+  @include vp-1199 {
+    width: 349px;
+    height: 454px;
+  }
 }

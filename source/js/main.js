@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 import {initTabs} from './modules/tabs/init-tabs';
-import { initSlider } from './modules/slider/slider';
+import {initSlider} from './modules/slider/slider';
 
 // ---------------------------------
 

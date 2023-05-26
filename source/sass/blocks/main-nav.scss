@@ -1,11 +1,23 @@
 .main-nav {
+  position: relative;
+  z-index: 2;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
 
 .main-nav__logo-link {
   padding-top: 8px;
+
+  @include hover {
+    opacity: 0.8;
+  }
+
+  @include focus {
+    border: none;
+    outline: 2px solid $color-default-white;
+  }
 }
 
 .main-nav__link {
@@ -14,18 +26,26 @@
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
-      
-    @include vp-1199 {
+
+  @include vp-1199 {
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
     letter-spacing: 0.02em;
-    }
-      
-    @include vp-767 {
-      font-weight: 600;
-      font-size: 20px;
-      line-height: 24px;
-    }
-}
+  }
 
+  @include vp-767 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @include hover {
+    opacity: 0.8;
+  }
+
+  @include focus {
+    border: none;
+    outline: 2px solid $color-default-white;
+  }
+}

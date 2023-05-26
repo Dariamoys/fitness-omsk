@@ -20,4 +20,3 @@ export const callbacks = {
     errorCallback: baseErrorCallback,
   },
 };
-

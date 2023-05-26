@@ -1,66 +1,64 @@
 .sign-up {
-   display: flex;
+  display: flex;
+  justify-content: center;
+  padding-top: 75px;
+  padding-left: 99px;
+  padding-bottom: 72px;
+  background-color: $color-text-blue;
+
+  @include vp-1199 {
+    display: flex;
     justify-content: center;
-    padding-top: 75px;
-    padding-left: 99px;
+    padding-top: 61px;
+    padding-left: 132px;
+    padding-right: 30px;
     padding-bottom: 72px;
-    background-color: $color-text-blue;
+  }
 
-    @include vp-1199 { 
-         display: flex;
-         justify-content: center;
-         padding-top: 61px;
-         padding-left: 132px;
-         padding-right: 30px;
-         padding-bottom: 72px;
-     }
-
-     @include vp-767 { 
-        padding-top: 64px;
-        padding-right: 0;
-        padding-left: 0;
-        padding-bottom: 71px;
-     }
+  @include vp-767 {
+    padding-top: 64px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 71px;
+  }
 }
 
 .sign-up__wrapper {
-      width: 100%;
-      max-width: 800px;
+  width: 100%;
+  max-width: 800px;
 
-      @include vp-1199 { 
-       max-width: 600px;
-     }
+  @include vp-1199 {
+    max-width: 600px;
+  }
 
-    @include vp-767 { 
-        padding: 0 15px;
-     }
+  @include vp-767 {
+    padding: 0 15px;
+  }
 }
 
 .sign-up h6 {
-    margin: 0;
-    margin-bottom: 27px;
-    font-family: $ff-alumni-sans;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 54px;
-    line-height: 90%;
-    letter-spacing: 0.03em;
-    color: $color-text-white;
-    text-align: left;
-    transform: translateX(7px);
+  margin: 0;
+  margin-bottom: 27px;
+  font-family: $ff-alumni-sans;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 90%;
+  letter-spacing: 0.03em;
+  color: $color-text-white;
+  text-align: left;
+  transform: translateX(7px);
 
-    @include vp-1199 { 
-        font-weight: 700;
-        font-size: 41px;
-        line-height: 50px;
-        transform: none;
-     }
+  @include vp-1199 {
+    font-weight: 700;
+    font-size: 41px;
+    line-height: 50px;
+    transform: none;
+  }
 
-
-     @include vp-767 {
-        font-weight: 600;
-        font-size: 32px;
-        line-height: 38px;
-     }
+  @include vp-767 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+  }
 }
-
