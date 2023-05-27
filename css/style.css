@@ -3164,7 +3164,7 @@ button,
 
 .advantages__item-content h5 {
   font-family: "RobotoCondensed", "Arial", sans-serif;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   font-weight: 700;
   font-size: 22px;
   line-height: 150%;
@@ -3225,7 +3225,7 @@ button,
   background-clip: unset;
   -webkit-text-fill-color: unset;
   font-weight: 700;
-  font-size: 74px;
+  font-size: 74px !important;
   line-height: 106%;
   color: #ffffff;
 }
@@ -4342,9 +4342,6 @@ button,
 
   .advantages__item-content {
     padding-right: 8px;
-    -webkit-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-    transform: translateY(-10px);
   }
 
   .advantages__item-content h5 {
@@ -5053,7 +5050,7 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 26px;
+    gap: 30px;
   }
 
   .promotion__item {
@@ -5066,7 +5063,7 @@ button,
     padding-top: 31px;
     padding-left: 39px;
     padding-right: 41px;
-    padding-bottom: 45px;
+    padding-bottom: 38px;
   }
 
   .promotion__item-header br {
@@ -5104,12 +5101,13 @@ button,
 
   .reviews {
     padding-top: 25px;
-    padding-bottom: 72px;
+    padding-bottom: 70px;
   }
 
   .reviews h5 {
     font-size: 32px;
     line-height: 38px;
+    margin-bottom: 45px;
   }
 
   .reviews__item {
@@ -5237,7 +5235,7 @@ button,
 
   .contacts {
     padding-top: 64px;
-    padding-bottom: 64px;
+    padding-bottom: 62px;
     padding-left: 0;
   }
 
