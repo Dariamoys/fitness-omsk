@@ -4342,6 +4342,9 @@ button,
 
   .advantages__item-content {
     padding-right: 8px;
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
   }
 
   .advantages__item-content h5 {
