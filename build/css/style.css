@@ -1193,7 +1193,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  min-height: 100vh;
+  height: 100%;
   scroll-behavior: smooth;
 }
 
@@ -1212,7 +1212,22 @@ html {
 body {
   width: 100%;
   height: 100%;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-x: hidden;
   background-color: #f8f9fc;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 
 a {
@@ -1983,6 +1998,7 @@ button,
 }
 
 .page-header {
+  margin-bottom: auto;
   padding-top: 30px;
   padding-bottom: 21px;
   background: conic-gradient(from 150.87deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
@@ -2384,6 +2400,7 @@ button,
 }
 
 .gym__wrapper {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2527,7 +2544,7 @@ button,
       flex-basis: 57%;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  height: 100%;
+  background-color: #102654;
 }
 @media (max-width: 1199px) {
   .gym__image-wrapper {
@@ -2548,8 +2565,8 @@ button,
 }
 
 .gym__image-wrapper img {
-  width: 660px;
-  height: 401px;
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -2566,70 +2583,62 @@ button,
   }
 }
 
-.gym__video-wrapper {
+.gym__video-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.video {
   position: absolute;
   content: "";
   bottom: -28%;
   left: -9%;
-  max-width: 364px;
-  min-height: 228px;
+  width: 55.15%;
+  aspect-ratio: 364/228;
+  background-color: #102654;
 }
 @media (max-width: 1199px) {
-  .gym__video-wrapper {
-    width: 266px;
-    max-height: 167px;
-    bottom: -42%;
-    left: 30%;
+  .video {
+    width: 39.23%;
+    bottom: -24%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 }
 @media (max-width: 767px) {
-  .gym__video-wrapper {
+  .video {
     position: relative;
     bottom: auto;
     left: auto;
     width: 100%;
-    max-width: 100%;
-    max-height: none;
-    min-height: auto;
+    -webkit-transform: unset;
+        -ms-transform: unset;
+            transform: unset;
+    aspect-ratio: 320/167;
   }
 }
 
-.gym__video-wrapper img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 364px;
-  height: 228px;
-}
-@media (max-width: 1199px) {
-  .gym__video-wrapper img {
-    width: 266px;
-    height: 167px;
-  }
-}
-@media (max-width: 767px) {
-  .gym__video-wrapper img {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 0;
-  }
+.video__media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
-.gym__button {
+.video__button {
   position: absolute;
   content: "";
   top: 50%;
   left: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: none;
   width: 72px;
   height: 72px;
   border-radius: 50%;
@@ -2638,18 +2647,19 @@ button,
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  border: none;
 }
 @media (max-width: 1199px) {
-  .gym__button {
+  .video__button {
     width: 52px;
     height: 52px;
   }
 }
-.gym__button.focus-visible:focus {
+.video__button.focus-visible:focus {
   background-color: rgba(255, 255, 255, 0.22);
 }
 
-.gym__button::before {
+.video__button::before {
   position: absolute;
   content: "";
   right: -20%;
@@ -2664,7 +2674,7 @@ button,
   opacity: 0.2;
 }
 @media (max-width: 1199px) {
-  .gym__button::before {
+  .video__button::before {
     right: -20%;
     top: -19%;
     width: 72px;
@@ -2674,29 +2684,45 @@ button,
   }
 }
 
-.gym__button:hover::before,
-.gym__button:active::before,
-.gym__button:focus::before {
+.video__button:hover::before,
+.video__button:active::before,
+.video__button:focus::before {
   scale: 1.1;
   opacity: 1;
 }
 
-.gym__button:focus {
+.video__button:focus {
   outline: none;
   border: none;
 }
 
-.gym__button svg {
+.video__button svg {
   -webkit-transform: translateX(2px);
       -ms-transform: translateX(2px);
           transform: translateX(2px);
 }
 @media (max-width: 1199px) {
-  .gym__button svg {
+  .video__button svg {
     -webkit-transform: translateX(4px);
         -ms-transform: translateX(4px);
             transform: translateX(4px);
   }
+}
+
+.video--enabled .video__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.video--enabled {
+  cursor: pointer;
 }
 
 .subscription {
@@ -2749,15 +2775,12 @@ button,
   position: absolute;
   z-index: 2;
   content: "";
-  bottom: 0;
+  bottom: -150px;
   right: 0;
-  width: 286px;
-  height: 334px;
 }
 @media (max-width: 1199px) {
   .subscription__image-wrapper {
-    width: 344px;
-    height: 325px;
+    bottom: -124px;
   }
 }
 @media (max-width: 767px) {
@@ -2767,13 +2790,15 @@ button,
 }
 
 .subscription__image-wrapper img {
-  width: 309px;
-  height: 477px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media (max-width: 1199px) {
   .subscription__image-wrapper img {
-    width: 349px;
-    height: 454px;
+    width: 347px;
+    height: 444px;
   }
 }
 
@@ -4497,6 +4522,8 @@ button,
 }
 
 .image-offer__image-wrapper {
+  position: relative;
+  z-index: 1;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   height: 100%;
@@ -4519,6 +4546,17 @@ button,
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.image-offer__image-wrapper::before {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #102654;
 }
 
 .reviews {

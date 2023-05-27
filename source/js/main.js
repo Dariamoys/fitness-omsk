@@ -1,7 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 import {initTabs} from './modules/tabs/init-tabs';
-import {initSlider} from './modules/slider/slider';
+import {initSwiperCoach, initSwiperReview} from './modules/slider/slider';
+import {findVideos} from './modules/video';
 
 // ---------------------------------
 
@@ -12,7 +13,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
   iosVhFix();
   initTabs();
-  initSlider();
+  initSwiperCoach();
+  initSwiperReview();
+  findVideos();
 
   // Modules
   // ---------------------------------
