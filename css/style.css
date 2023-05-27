@@ -4349,6 +4349,10 @@ button,
     margin-bottom: 0;
   }
 
+  .advantages__item--square br {
+    display: none;
+  }
+
   .advantages__item--center {
     display: block;
     position: static;
