@@ -1235,7 +1235,7 @@ button.swiper-pagination-bullet {
   font-weight: 400;
   font-family: "RobotoCondensed";
   font-display: swap;
-  src: url("../../fonts/roboto-condensed-regular.woff") format("woff2"), url("../../fonts/roboto-condensed-regular.woff") format("woff");
+  src: url("../fonts/roboto-condensed-regular.woff") format("woff2"), url("../fonts/roboto-condensed-regular.woff") format("woff");
 }
 
 @font-face {
@@ -1243,7 +1243,7 @@ button.swiper-pagination-bullet {
   font-weight: 300;
   font-family: "RobotoCondensed";
   font-display: swap;
-  src: url("../../fonts/roboto-condensed-light.woff2") format("woff2"), url("../../fonts/roboto-condensed-light.woff") format("woff");
+  src: url("../fonts/roboto-condensed-light.woff2") format("woff2"), url("../fonts/roboto-condensed-light.woff") format("woff");
 }
 
 @font-face {
@@ -1251,7 +1251,7 @@ button.swiper-pagination-bullet {
   font-weight: 700;
   font-family: "RobotoCondensed";
   font-display: swap;
-  src: url("../../fonts/roboto-condensed-bold.woff2") format("woff2"), url("../../fonts/roboto-condensed-bold.woff") format("woff");
+  src: url("../fonts/roboto-condensed-bold.woff2") format("woff2"), url("../fonts/roboto-condensed-bold.woff") format("woff");
 }
 
 @font-face {
@@ -1259,7 +1259,7 @@ button.swiper-pagination-bullet {
   font-weight: 600;
   font-family: "AlumniSans";
   font-display: swap;
-  src: url("../../fonts/alumni-sans-semi-bold.woff2") format("woff2"), url("../../fonts/alumni-sans-semi-bold.woff") format("woff");
+  src: url("../fonts/alumni-sans-semi-bold.woff2") format("woff2"), url("../fonts/alumni-sans-semi-bold.woff") format("woff");
 }
 
 @font-face {
@@ -1267,7 +1267,7 @@ button.swiper-pagination-bullet {
   font-weight: 800;
   font-family: "AlumniSans";
   font-display: swap;
-  src: url("../../fonts/alumni-sans-extra-bold.woff2") format("woff2"), url("../../fonts/alumni-sans-extra-bold.woff") format("woff");
+  src: url("../fonts/alumni-sans-extra-bold.woff2") format("woff2"), url("../fonts/alumni-sans-extra-bold.woff") format("woff");
 }
 
 *,
