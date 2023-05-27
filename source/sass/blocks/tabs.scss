@@ -8,12 +8,12 @@
   position: relative;
   margin-bottom: 49px;
   display: flex;
-  min-width: 357px;
+  min-width: 344px;
   align-items: center;
   justify-content: space-between;
 
   @include vp-1199 {
-    min-width: 350px;
+    min-width: 334px;
     margin-bottom: 55px;
   }
 
