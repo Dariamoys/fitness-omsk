@@ -8,8 +8,8 @@ const initSwiperCoach = () => {
         loop: true,
 
         navigation: {
-          nextEl: '.swiper-button-prev-unique',
-          prevEl: '.swiper-button-next-unique',
+          nextEl: '.swiper-button-next-unique',
+          prevEl: '.swiper-button-prev-unique',
         },
 
         breakpoints: {
