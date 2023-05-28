@@ -4345,7 +4345,11 @@ button,
   }
 
   .advantages__item-content h5 {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
     font-size: 20px;
+    line-height: 100%;
     margin-bottom: 0;
   }
 
