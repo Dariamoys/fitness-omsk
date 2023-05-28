@@ -4259,6 +4259,11 @@ button,
     font-size: 24px;
   }
 
+  .competitions__description {
+    gap: 3px;
+    line-height: 108%;
+  }
+
   .competitions__description:first-of-type {
     margin-bottom: 0;
   }
@@ -4984,7 +4989,7 @@ button,
     -ms-grid-column-align: center;
     justify-self: center;
     width: 77%;
-    gap: 0;
+    gap: 3px;
   }
 
   .advantages__item-inner {
