@@ -4402,6 +4402,16 @@ button,
     padding-left: 100px;
   }
 
+  .advantages__item--center span {
+    background: unset;
+    background-clip: unset;
+    -webkit-text-fill-color: unset;
+    font-weight: 700;
+    font-size: 74px;
+    line-height: 106%;
+    color: #ffffff;
+  }
+
   .advantages__item--center small {
     font-size: 22px;
     margin-bottom: 15px;
