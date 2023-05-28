@@ -9,7 +9,7 @@
   }
 
   @include vp-767 {
-    padding-top: 72px;
+    padding-top: 70px;
     padding-bottom: 35px;
   }
 }
@@ -26,16 +26,19 @@
   width: 43%;
   padding: 80px 78px;
   padding-bottom: 85px;
+  padding-top: 77px;
   background-color: $color-red;
   color: $color-text-white;
 
   @include vp-1199 {
-    padding: 45px 45px;
+    padding: 45px;
+    padding-top: 48px;
   }
 
   @include vp-767 {
     width: 100%;
     padding-bottom: 49px;
+    padding-top: 49px;
     text-align: center;
   }
 }
@@ -64,12 +67,12 @@
   margin-bottom: 8px;
 
   @include vp-1199 {
-    margin-bottom: 1px;
+    margin-bottom: 8px;
     gap: 15px;
   }
 
   @include vp-767 {
-    margin-bottom: 0;
+    margin-bottom: 8px;
   }
 }
 
@@ -122,13 +125,22 @@
   @include vp-1199 {
     font-size: 24px;
   }
+
+  @include vp-1199 {
+    gap: 3px;
+    line-height: 108%;
+  }
 }
 
 .competitions__description:first-of-type {
   margin-bottom: 10px;
 
   @include vp-1199 {
-    margin-bottom: 0;
+    margin-bottom: 4px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 5px;
   }
 }
 

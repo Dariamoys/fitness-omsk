@@ -97,6 +97,19 @@
   line-height: 121%;
 
   @include vp-1199 {
+    font-family: $ff-roboto;
+    margin: 0;
+    margin-bottom: 4px;
+    font-weight: 700;
+    line-height: 150%;
+    font-size: 20px;
+  }
+
+  @include vp-767 {
+    font-family: $ff-roboto;
+    margin: 0;
+    margin-bottom: 4px;
+    font-weight: 700;
     line-height: 150%;
     font-size: 20px;
   }

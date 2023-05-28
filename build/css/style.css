@@ -2320,14 +2320,24 @@ button,
   flex-basis: 57%;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  background-color: #102654;
 }
 
 .gym__image-wrapper img {
+  position: relative;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+}
+
+.gym__image-wrapper img::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #102654;
 }
 
 .gym__video-wrapper img {
@@ -2740,6 +2750,7 @@ button,
   width: 43%;
   padding: 80px 78px;
   padding-bottom: 85px;
+  padding-top: 77px;
   background-color: #ed0233;
   color: #ffffff;
 }
@@ -3225,7 +3236,7 @@ button,
   background-clip: unset;
   -webkit-text-fill-color: unset;
   font-weight: 700;
-  font-size: 74px !important;
+  font-size: 74px;
   line-height: 106%;
   color: #ffffff;
 }
@@ -4221,7 +4232,8 @@ button,
   }
 
   .competitions__content {
-    padding: 45px 45px;
+    padding: 45px;
+    padding-top: 48px;
   }
 
   .competitions__content p {
@@ -4230,7 +4242,7 @@ button,
   }
 
   .competitions__info {
-    margin-bottom: 1px;
+    margin-bottom: 8px;
     gap: 15px;
   }
 
@@ -4249,8 +4261,13 @@ button,
     font-size: 24px;
   }
 
+  .competitions__description {
+    gap: 3px;
+    line-height: 108%;
+  }
+
   .competitions__description:first-of-type {
-    margin-bottom: 0;
+    margin-bottom: 4px;
   }
 
   .competitions__description::before {
@@ -4345,8 +4362,12 @@ button,
   }
 
   .advantages__item-content h5 {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
     font-size: 20px;
-    margin-bottom: 0;
+    line-height: 100%;
+    margin-bottom: 8px;
   }
 
   .advantages__item--square br {
@@ -4379,6 +4400,16 @@ button,
   .advantages__item--center .advantages__item-content {
     padding-right: 100px;
     padding-left: 100px;
+  }
+
+  .advantages__item--center span {
+    background: unset;
+    background-clip: unset;
+    -webkit-text-fill-color: unset;
+    font-weight: 700;
+    font-size: 74px;
+    line-height: 106%;
+    color: #ffffff;
   }
 
   .advantages__item--center small {
@@ -4466,6 +4497,21 @@ button,
     padding-left: 69px;
   }
 
+  .reviews__content h5 {
+    margin-bottom: 11px;
+    font-family: "RobotoCondensed", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #ffffff;
+    text-align: left;
+    letter-spacing: normal;
+  }
+
+  .reviews__image-header h5 {
+    display: none;
+  }
+
   .sections-wrapper {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -4544,6 +4590,10 @@ button,
   }
 
   .contacts__list h6 {
+    font-family: "RobotoCondensed", "Arial", sans-serif;
+    margin: 0;
+    margin-bottom: 4px;
+    font-weight: 700;
     line-height: 150%;
     font-size: 20px;
   }
@@ -4716,6 +4766,10 @@ button,
     margin-bottom: 40px;
   }
 
+  .gym__video-wrapper img {
+    margin-bottom: 0;
+  }
+
   .video {
     position: relative;
     bottom: auto;
@@ -4811,7 +4865,7 @@ button,
   }
 
   .competitions {
-    padding-top: 72px;
+    padding-top: 70px;
     padding-bottom: 35px;
   }
 
@@ -4825,6 +4879,7 @@ button,
   .competitions__content {
     width: 100%;
     padding-bottom: 49px;
+    padding-top: 49px;
     text-align: center;
   }
 
@@ -4833,11 +4888,15 @@ button,
   }
 
   .competitions__info {
-    margin-bottom: 0;
+    margin-bottom: 8px;
   }
 
   .competitions__termin {
     text-align: left;
+  }
+
+  .competitions__description:first-of-type {
+    margin-bottom: 5px;
   }
 
   .competitions__link {
@@ -4850,7 +4909,7 @@ button,
 
   .coaches {
     padding: 30px 32px;
-    padding-bottom: 70px;
+    padding-bottom: 71px;
   }
 
   .coaches h4 {
@@ -4905,7 +4964,7 @@ button,
   }
 
   .advantages {
-    padding-top: 63px;
+    padding-top: 61px;
     padding-bottom: 50px;
   }
 
@@ -4947,7 +5006,7 @@ button,
     -ms-grid-column-align: center;
     justify-self: center;
     width: 77%;
-    gap: 0;
+    gap: 3px;
   }
 
   .advantages__item-inner {
@@ -4968,6 +5027,15 @@ button,
   }
 
   .advantages__item-content h5 {
+    font-family: "RobotoCondensed", "Arial", sans-serif;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
     text-align: center;
   }
 
@@ -5024,7 +5092,13 @@ button,
   }
 
   .advantages__item--center span {
+    background: unset;
+    background-clip: unset;
+    -webkit-text-fill-color: unset;
+    font-weight: 700;
+    font-size: 74px;
     line-height: 94%;
+    color: #ffffff;
   }
 
   .advantages__item--center small {
@@ -5118,7 +5192,7 @@ button,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    gap: 23px;
+    gap: 20px;
     padding-top: 40px;
     padding-bottom: 25px;
     padding-right: 25px;
@@ -5252,6 +5326,15 @@ button,
   .contacts__list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+  }
+
+  .contacts__list h6 {
+    font-family: "RobotoCondensed", "Arial", sans-serif;
+    margin: 0;
+    margin-bottom: 4px;
+    font-weight: 700;
+    line-height: 150%;
+    font-size: 20px;
   }
 
   .contacts__list::after {

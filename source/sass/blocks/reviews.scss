@@ -65,7 +65,7 @@
   @include vp-767 {
     flex-direction: column;
     align-items: center;
-    gap: 23px;
+    gap: 20px;
     padding-top: 40px;
     padding-bottom: 25px;
     padding-right: 25px;
@@ -115,6 +115,17 @@
   text-align: left;
   letter-spacing: normal;
 
+  @include vp-1199 {
+    margin-bottom: 11px;
+    font-family: $ff-roboto;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: $color-text-white;
+    text-align: left;
+    letter-spacing: normal;
+  }
+
   @include vp-767 {
     display: none;
   }
@@ -137,6 +148,10 @@
 
 .reviews__image-header h5 {
   display: none;
+
+  @include vp-1199 {
+    display: none;
+  }
 
   @include vp-767 {
     display: block;

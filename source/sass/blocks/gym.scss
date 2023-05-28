@@ -138,7 +138,6 @@
   position: relative;
   flex-basis: 57%;
   flex-shrink: 0;
-  background-color: $color-text-blue;
 
   @include vp-1199 {
     flex-shrink: 0;
@@ -155,6 +154,7 @@
 }
 
 .gym__image-wrapper img {
+  position: relative;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -170,6 +170,16 @@
   }
 }
 
+.gym__image-wrapper img::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $color-text-blue;
+}
+
 .gym__video-wrapper img {
   position: absolute;
   top: 0;
@@ -177,4 +187,8 @@
   width: 100%;
   height: 100%;
   border: none;
+
+  @include vp-767 {
+    margin-bottom: 0;
+  }
 }

@@ -9,7 +9,7 @@
   }
 
   @include vp-767 {
-    padding-top: 63px;
+    padding-top: 61px;
     padding-bottom: 50px;
   }
 }
@@ -83,7 +83,7 @@
     padding-right: 10px;
     justify-self: center;
     width: 77%;
-    gap: 0;
+    gap: 3px;
   }
 }
 
@@ -148,11 +148,20 @@
   transform: none;
 
   @include vp-1199 {
+    transform: none;
     font-size: 20px;
-    margin-bottom: 0;
+    line-height: 100%;
+    margin-bottom: 8px;
   }
 
   @include vp-767 {
+    font-family: $ff-roboto;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0;
+    transform: none;
     text-align: center;
   }
 }
@@ -278,12 +287,28 @@
   background-clip: unset;
   -webkit-text-fill-color: unset;
   font-weight: 700;
-  font-size: 74px!important;
+  font-size: 74px;
   line-height: 106%;
   color: $color-text-white;
 
+  @include vp-1199 {
+    background: unset;
+    background-clip: unset;
+    -webkit-text-fill-color: unset;
+    font-weight: 700;
+    font-size: 74px;
+    line-height: 106%;
+    color: $color-text-white;
+  }
+
   @include vp-767 {
+    background: unset;
+    background-clip: unset;
+    -webkit-text-fill-color: unset;
+    font-weight: 700;
+    font-size: 74px;
     line-height: 94%;
+    color: $color-text-white;
   }
 }
 
