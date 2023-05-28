@@ -4563,6 +4563,10 @@ button,
   }
 
   .contacts__list h6 {
+    font-family: "RobotoCondensed", "Arial", sans-serif;
+    margin: 0;
+    margin-bottom: 4px;
+    font-weight: 700;
     line-height: 150%;
     font-size: 20px;
   }
