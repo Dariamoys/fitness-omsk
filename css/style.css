@@ -3513,7 +3513,7 @@ button,
   transform: translateY(-7px);
 }
 
-.reviews__content h6 {
+.reviews__content h5 {
   margin-bottom: 11px;
   font-family: "RobotoCondensed", "Arial", sans-serif;
   font-weight: 700;
@@ -4470,6 +4470,21 @@ button,
     padding-left: 69px;
   }
 
+  .reviews__content h5 {
+    margin-bottom: 11px;
+    font-family: "RobotoCondensed", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #ffffff;
+    text-align: left;
+    letter-spacing: normal;
+  }
+
+  .reviews__image-header h5 {
+    display: none;
+  }
+
   .sections-wrapper {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -5152,7 +5167,7 @@ button,
     height: 68px;
   }
 
-  .reviews__content h6 {
+  .reviews__content h5 {
     display: none;
   }
 
