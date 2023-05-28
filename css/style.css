@@ -2750,6 +2750,7 @@ button,
   width: 43%;
   padding: 80px 78px;
   padding-bottom: 85px;
+  padding-top: 77px;
   background-color: #ed0233;
   color: #ffffff;
 }
@@ -4231,7 +4232,8 @@ button,
   }
 
   .competitions__content {
-    padding: 45px 45px;
+    padding: 45px;
+    padding-top: 48px;
   }
 
   .competitions__content p {
@@ -4240,7 +4242,7 @@ button,
   }
 
   .competitions__info {
-    margin-bottom: 1px;
+    margin-bottom: 8px;
     gap: 15px;
   }
 
@@ -4265,7 +4267,7 @@ button,
   }
 
   .competitions__description:first-of-type {
-    margin-bottom: 0;
+    margin-bottom: 4px;
   }
 
   .competitions__description::before {
