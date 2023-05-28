@@ -3235,7 +3235,7 @@ button,
   background-clip: unset;
   -webkit-text-fill-color: unset;
   font-weight: 700;
-  font-size: 74px !important;
+  font-size: 74px;
   line-height: 106%;
   color: #ffffff;
 }
