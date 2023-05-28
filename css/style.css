@@ -4892,7 +4892,7 @@ button,
 
   .coaches {
     padding: 30px 32px;
-    padding-bottom: 70px;
+    padding-bottom: 84px;
   }
 
   .coaches h4 {
@@ -5169,7 +5169,7 @@ button,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    gap: 23px;
+    gap: 20px;
     padding-top: 40px;
     padding-bottom: 25px;
     padding-right: 25px;
@@ -5303,6 +5303,15 @@ button,
   .contacts__list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+  }
+
+  .contacts__list h6 {
+    font-family: "RobotoCondensed", "Arial", sans-serif;
+    margin: 0;
+    margin-bottom: 4px;
+    font-weight: 700;
+    line-height: 150%;
+    font-size: 20px;
   }
 
   .contacts__list::after {
