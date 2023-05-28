@@ -4853,7 +4853,7 @@ button,
   }
 
   .competitions {
-    padding-top: 72px;
+    padding-top: 70px;
     padding-bottom: 35px;
   }
 
@@ -4867,6 +4867,7 @@ button,
   .competitions__content {
     width: 100%;
     padding-bottom: 49px;
+    padding-top: 49px;
     text-align: center;
   }
 
@@ -4875,11 +4876,15 @@ button,
   }
 
   .competitions__info {
-    margin-bottom: 0;
+    margin-bottom: 8px;
   }
 
   .competitions__termin {
     text-align: left;
+  }
+
+  .competitions__description:first-of-type {
+    margin-bottom: 5px;
   }
 
   .competitions__link {
@@ -4892,7 +4897,7 @@ button,
 
   .coaches {
     padding: 30px 32px;
-    padding-bottom: 84px;
+    padding-bottom: 71px;
   }
 
   .coaches h4 {
@@ -4947,7 +4952,7 @@ button,
   }
 
   .advantages {
-    padding-top: 63px;
+    padding-top: 61px;
     padding-bottom: 50px;
   }
 
