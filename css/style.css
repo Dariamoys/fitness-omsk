@@ -3820,6 +3820,13 @@ button,
   max-width: 200px;
 }
 
+.contacts__link {
+  margin-top: 5px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #102654;
+}
+
 .footer {
   padding-top: 44px;
   padding-bottom: 23px;
@@ -4609,6 +4616,11 @@ button,
 
   .contacts__item {
     max-width: 218px;
+  }
+
+  .contacts__link {
+    font-size: 18px;
+    line-height: 27px;
   }
 
   .footer__nav {
