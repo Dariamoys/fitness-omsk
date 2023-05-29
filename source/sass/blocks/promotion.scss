@@ -87,6 +87,7 @@
   @include vp-1199 {
     flex-basis: 324px;
     flex-shrink: 1;
+    flex-grow: 1;
     min-height: 211px;
     padding-top: 18px;
     padding-left: 27px;
@@ -143,16 +144,16 @@
   position: relative;
   padding: 0;
   color: #1c3374;
-
-  @include hover-focus {
-    outline: 0;
-    border: 0;
-  }
 }
 
-.promotion__list-link:hover,
+.promotion__list-link:hover {
+  opacity: 0.8;
+  transition: none;
+}
+
 .promotion__list-link:active,
 .promotion__list-link:focus {
+  outline: none;
   scale: 1.1;
   opacity: 1;
 }

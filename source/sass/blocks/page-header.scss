@@ -52,33 +52,10 @@
 }
 
 .page-header__content-list {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
   margin-top: 102px;
-  grid-row: 1 / 4;
 
   @include vp-1199 {
     margin-top: 56px;
-    min-width: 113px;
-  }
-
-  @include vp-767 {
-    transform: translate(-1px, 19px);
-  }
-}
-
-.page-header__content-item {
-  font-family: inherit;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  text-align: right;
-  color: $color-text-white;
-
-  @include vp-1199 {
-    font-size: 14px;
-    line-height: 21px;
   }
 }
 
