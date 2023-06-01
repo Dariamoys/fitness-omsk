@@ -2998,10 +2998,9 @@ button,
 }
 
 .card {
-  display: -ms-grid;
-  display: grid;
+  position: relative;
   max-width: 260px;
-  aspect-ratio: 0.8/1;
+  aspect-ratio: 0.9/1;
 }
 
 .card h5 {
@@ -3015,11 +3014,7 @@ button,
 
 .card__content-wrapper {
   position: relative;
-  z-index: -1;
-  grid-column: 1/-1;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
+  z-index: -5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3069,12 +3064,12 @@ button,
 }
 
 .card__image-wrapper {
-  min-height: 294px;
-  width: auto;
-  grid-column: 1/-1;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .card img {
@@ -3110,8 +3105,8 @@ button,
 }
 
 .advantages {
-  padding-top: 97px;
-  padding-bottom: 82px;
+  padding-top: 101px;
+  padding-bottom: 84px;
   background-color: #f8f9fc;
 }
 
@@ -3229,7 +3224,7 @@ button,
 }
 
 .advantages__item--parking::after {
-  left: 0px;
+  left: 0;
   bottom: -26px;
   width: 100%;
 }
@@ -3819,14 +3814,6 @@ button,
 .contacts__list {
   position: relative;
   padding-left: 5px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-  grid-template-columns: repeat(2, 1fr);
-  -webkit-column-gap: 20px;
-  -moz-column-gap: 20px;
-  column-gap: 20px;
-  row-gap: 23px;
   -webkit-column-count: 2;
   -moz-column-count: 2;
   column-count: 2;
@@ -3859,7 +3846,16 @@ button,
 }
 
 .contacts__item {
+  page-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+  break-inside: avoid-column;
   max-width: 200px;
+  margin-bottom: 20px;
+}
+
+.contacts__item:nth-last-child(-n+1) {
+  margin-bottom: 0;
 }
 
 .contacts__link {
@@ -3870,7 +3866,7 @@ button,
 }
 
 .footer {
-  padding-top: 44px;
+  padding-top: 41px;
   padding-bottom: 23px;
   background-color: #030a1a;
 }
@@ -4023,6 +4019,7 @@ button,
 
 @media (min-width: 1200px) {
   .card:hover .card__content-wrapper {
+    position: relative;
     z-index: 10;
   }
 
@@ -4038,10 +4035,6 @@ button,
 
   .tabs__list-item {
     min-width: 300px;
-  }
-
-  .card {
-    max-width: 100%;
   }
 }
 
@@ -4342,7 +4335,7 @@ button,
 
   .coaches {
     padding: 50px 56px;
-    padding-bottom: 100px;
+    padding-bottom: 96px;
   }
 
   .coaches h4 {
@@ -4369,15 +4362,13 @@ button,
   }
 
   .card {
-    aspect-ratio: 268/294;
-  }
-
-  .card:hover .card__content-wrapper {
-    z-index: 10;
+    max-width: 100%;
+    aspect-ratio: 0.9/1;
   }
 
   .card:active .card__content-wrapper,
   .card:focus .card__content-wrapper {
+    position: relative;
     z-index: 10;
   }
 
@@ -4637,7 +4628,7 @@ button,
     padding-top: 61px;
     padding-left: 132px;
     padding-right: 30px;
-    padding-bottom: 64px;
+    padding-bottom: 54px;
   }
 
   .contacts::before {
@@ -4656,7 +4647,6 @@ button,
 
   .contacts__list {
     padding-left: 0;
-    row-gap: 20px;
   }
 
   .contacts__list h6 {
@@ -4989,7 +4979,7 @@ button,
 
   .coaches {
     padding: 30px 32px;
-    padding-bottom: 71px;
+    padding-bottom: 70px;
   }
 
   .coaches h4 {
@@ -5029,7 +5019,7 @@ button,
   }
 
   .card {
-    aspect-ratio: 226/274;
+    aspect-ratio: 0.82/1;
   }
 
   .card__content-wrapper {
@@ -5399,6 +5389,9 @@ button,
   }
 
   .contacts__list {
+    display: -ms-grid;
+    display: grid;
+    row-gap: 20px;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
@@ -5414,6 +5407,10 @@ button,
 
   .contacts__list::after {
     display: none;
+  }
+
+  .contacts__item {
+    margin-bottom: 0;
   }
 
   .contacts__phone {
