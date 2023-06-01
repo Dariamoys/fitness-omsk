@@ -1,6 +1,6 @@
 .advantages {
   padding-top: 97px;
-  padding-bottom: 103px;
+  padding-bottom: 82px;
   background-color: $color-light-grey;
 
   @include vp-1199 {
@@ -46,17 +46,18 @@
 }
 
 .advantages__list {
-  position: relative;
+  margin: 0 auto;
+  padding-left: 20px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  row-gap: 86px;
-  column-gap: 283px;
-  padding-left: 80px;
+  grid-template-columns: 1fr 0.74fr 1fr;
+  gap: 67px 44px;
+  max-width: 1040px;
 
   @include vp-1199 {
     padding-left: 0;
     column-gap: 32px;
     row-gap: 6px;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
   }
 
@@ -124,7 +125,7 @@
 
 .advantages__item-content {
   padding-top: 3px;
-  padding-right: 40px;
+  padding-right: 13px;
 
   @include vp-1199 {
     padding-right: 8px;
@@ -174,6 +175,8 @@
 }
 
 .advantages__item--square {
+  position: relative;
+
   @include vp-767 {
     order: 1;
     margin-bottom: 9px;
@@ -192,9 +195,36 @@
 }
 
 .advantages__item--parking {
+  position: relative;
+
   @include vp-767 {
     order: 2;
     margin-bottom: 30px;
+  }
+}
+
+.advantages__item--square::after,
+.advantages__item--parking::after {
+  content: "";
+  position: absolute;
+  left: -17px;
+  bottom: -27px;
+  width: 99%;
+  height: 2px;
+  background-color: rgba(209, 10, 66, 0.2);
+
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.advantages__item--parking::after {
+  left: 0px;
+  bottom: -26px;
+  width: 100%;
+
+  @include vp-1199 {
+    display: none;
   }
 }
 
@@ -221,19 +251,17 @@
 }
 
 .advantages__item--center {
-  position: absolute;
-  content: "";
-  top: 52%;
-  left: 50%;
-  transform: translate(-50%, -52%);
+  margin-top: 41px;
+  margin-bottom: 57px;
+  grid-row: 1/3;
+  grid-column: 2/3;
   display: flex;
   flex-direction: column;
   max-width: 240px;
-  min-height: auto;
-  height: 80%;
+  min-height: 307px;
   padding-right: 15px;
-  padding-left: 15px;
-  padding-top: 53px;
+  padding-left: 13px;
+  padding-top: 50px;
   padding-bottom: 15px;
   overflow-y: auto;
   text-align: center;
@@ -241,8 +269,8 @@
   color: $color-default-white;
 
   @include vp-1199 {
-    display: block;
-    position: static;
+    margin: 0;
+    gap: 13px;
     justify-self: center;
     transform: none;
     max-width: 65%;
@@ -259,6 +287,7 @@
   @include vp-767 {
     max-width: 100%;
     min-height: 239px;
+    gap: 4px;
     padding-right: 0;
     padding-left: 0;
     padding-top: 37px;
@@ -320,11 +349,6 @@
 
   @include vp-1199 {
     font-size: 22px;
-    margin-bottom: 15px;
-  }
-
-  @include vp-767 {
-    margin-bottom: 4px;
   }
 }
 

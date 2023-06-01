@@ -8,9 +8,11 @@
   position: relative;
   margin-bottom: 49px;
   display: flex;
+  flex-wrap: wrap;
   min-width: 344px;
   align-items: center;
   justify-content: space-between;
+  gap: 15px;
 
   @include vp-1199 {
     min-width: 334px;
@@ -130,6 +132,10 @@
   justify-content: space-between;
   padding: 65px 45px;
   background-color: $color-default-white;
+
+  @include vp-1279 {
+    min-width: 300px;
+  }
 
   @include vp-1199 {
     min-width: 442px;
