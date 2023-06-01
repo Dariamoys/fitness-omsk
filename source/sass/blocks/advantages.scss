@@ -1,6 +1,6 @@
 .advantages {
-  padding-top: 97px;
-  padding-bottom: 82px;
+  padding-top: 101px;
+  padding-bottom: 84px;
   background-color: $color-light-grey;
 
   @include vp-1199 {
@@ -219,7 +219,7 @@
 }
 
 .advantages__item--parking::after {
-  left: 0px;
+  left: 0;
   bottom: -26px;
   width: 100%;
 
