@@ -2318,7 +2318,7 @@ button,
   margin-top: 10px;
 }
 
-.gym__image-wrapper {
+.gym__media-wrapper {
   position: relative;
   -ms-flex-preferred-size: 57%;
   flex-basis: 57%;
@@ -2327,15 +2327,22 @@ button,
   max-height: 401px;
 }
 
+.gym__image-wrapper {
+  position: relative;
+  max-height: 401px;
+  aspect-ratio: 660/401;
+}
+
 .gym__image-wrapper img {
   position: relative;
+  z-index: 1;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
 }
 
-.gym__image-wrapper img::after {
+.gym__image-wrapper::after {
   position: absolute;
   content: "";
   top: 0;
@@ -2346,16 +2353,16 @@ button,
 }
 
 .gym__video-wrapper img {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   border: none;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .video {
   position: absolute;
+  z-index: 2;
   content: "";
   bottom: -28%;
   left: -9%;
@@ -3230,6 +3237,7 @@ button,
 }
 
 .advantages__item--center {
+  gap: 33px;
   margin-top: 41px;
   margin-bottom: 57px;
   -ms-grid-row: 1;
@@ -4180,13 +4188,20 @@ button,
     display: none;
   }
 
-  .gym__image-wrapper {
+  .gym__media-wrapper {
     -ms-flex-negative: 0;
     flex-shrink: 0;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     font-size: 16px;
     line-height: 24px;
+    max-height: unset;
+  }
+
+  .gym__image-wrapper {
+    max-height: unset;
+    min-height: 345px;
+    aspect-ratio: 678/345;
   }
 
   .gym__image-wrapper img {
@@ -4364,6 +4379,15 @@ button,
   .card {
     max-width: 100%;
     aspect-ratio: 0.9/1;
+  }
+
+  .card__content-wrapper {
+    padding: 35px;
+    padding-top: 54px;
+  }
+
+  .card__list {
+    padding-left: 34px;
   }
 
   .card:active .card__content-wrapper,
@@ -4611,7 +4635,7 @@ button,
   }
 
   .sign-up-form__input-wrapper {
-    margin-bottom: 25px;
+    margin-bottom: 27px;
     gap: 62px;
   }
 
@@ -4678,6 +4702,7 @@ button,
 
   .footer {
     padding-bottom: 47px;
+    padding-top: 46px;
   }
 
   .footer__nav {
@@ -4698,17 +4723,6 @@ button,
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
-  }
-}
-
-@media (max-width: 1023px) {
-  .card__content-wrapper {
-    padding: 35px;
-    padding-top: 54px;
-  }
-
-  .card__list {
-    padding-left: 34px;
   }
 }
 
@@ -4768,6 +4782,10 @@ button,
     transform: translate(-1px, 19px);
   }
 
+  .main-nav {
+    gap: 10px;
+  }
+
   .main-nav__link {
     font-weight: 600;
     font-size: 20px;
@@ -4824,20 +4842,19 @@ button,
     padding-right: 35px;
   }
 
-  .gym__image-wrapper {
+  .gym__media-wrapper {
     padding: 0;
+  }
+
+  .gym__image-wrapper {
     width: 100%;
-    max-height: unset;
-    aspect-ratio: 1.92/1;
+    aspect-ratio: 320/313;
+    min-height: unset;
+    margin-bottom: 40px;
   }
 
   .gym__image-wrapper img {
     width: 100%;
-    margin-bottom: 40px;
-  }
-
-  .gym__video-wrapper img {
-    margin-bottom: 0;
   }
 
   .video {
