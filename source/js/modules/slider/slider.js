@@ -25,6 +25,12 @@ const initSwiperCoach = () => {
             initialSlide: 2,
           },
 
+          1199: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            initialSlide: 2,
+          },
+
           1200: {
             slidesPerView: 4,
             spaceBetween: 40,
