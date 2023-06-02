@@ -3790,7 +3790,7 @@ button,
   justify-content: center;
   padding-top: 56px;
   padding-left: 120px;
-  padding-bottom: 63px;
+  padding-bottom: 54px;
   background-color: #ffffff;
 }
 
@@ -3830,7 +3830,7 @@ button,
 .contacts__list h6 {
   font-family: "RobotoCondensed", "Arial", sans-serif;
   margin: 0;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
   font-weight: 700;
   font-size: 16px;
   line-height: 121%;
@@ -3838,7 +3838,6 @@ button,
 
 .contacts__list p {
   margin: 0;
-  margin-top: 5px;
   font-size: 14px;
   line-height: 21px;
 }
@@ -3858,8 +3857,15 @@ button,
   -webkit-column-break-inside: avoid;
   -moz-column-break-inside: avoid;
   break-inside: avoid-column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   max-width: 200px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .contacts__item:nth-last-child(-n+1) {
@@ -3867,7 +3873,6 @@ button,
 }
 
 .contacts__link {
-  margin-top: 5px;
   font-size: 14px;
   line-height: 21px;
   color: #102654;
@@ -4652,7 +4657,7 @@ button,
     padding-top: 61px;
     padding-left: 132px;
     padding-right: 30px;
-    padding-bottom: 54px;
+    padding-bottom: 56px;
   }
 
   .contacts::before {
